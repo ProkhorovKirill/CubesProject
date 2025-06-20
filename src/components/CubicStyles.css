@@ -1,0 +1,102 @@
+.cubic_element{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px 0 15px;
+}
+
+.count{
+    color: rgb(13, 0, 255);
+    font-size: 34px;
+    display: inline-block;
+}
+
+.redCount{
+    color: rgb(255, 0, 0);
+    font-size: 34px;
+    display: inline-block;
+}
+
+.wrapper{
+    position: relative;
+    width: 150px;
+    height: 160px;
+    /* background-image: url(../images/d20-Photoroom.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-getNum{
+    background: linear-gradient(60deg, #d900ff 30%, #00b3ff);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-getNum:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    padding-right: 50px;
+}
+
+.btn-getNum:active{
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.btn-getNum:hover::after {
+  right: 15px;
+  transform: translateY(-50%) rotate(360deg);
+  content: "🎲";
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+.get_animation{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-top: 3px solid black;
+    width: 100%;
+    padding: 15px 15px 0;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.inputColor{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+    .cubic_element{
+        max-width: 250px;
+    }
+}
